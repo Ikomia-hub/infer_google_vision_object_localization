@@ -1,0 +1,1 @@
+# infer_google_vision_object_localization
