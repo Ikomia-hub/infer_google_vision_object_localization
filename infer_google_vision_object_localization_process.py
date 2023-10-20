@@ -109,7 +109,7 @@ class InferGoogleVisionObjectLocalization(dataprocess.CObjectDetectionTask):
             # Display graphics
             self.add_object(i, 0, object_.score, float(x_box), float(y_box), w, h)
 
-        output_dict.data = ({'logo_annotations': f'{response.localized_object_annotations}'})
+        output_dict.data = {'logo_annotations': str(response.localized_object_annotations)}
 
         # Step progress bar (Ikomia Studio):
         self.emit_step_progress()
